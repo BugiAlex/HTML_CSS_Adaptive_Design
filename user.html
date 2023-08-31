@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alec Tompson</title>
+</head>
+<style>
+    .panel
+        {
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            border: solid 1px gray; 
+            height: 100%; 
+            width: 200px; 
+            background-color: white;
+           
+        }
+        .panel > a
+        {
+            text-decoration: none; 
+            color: gray; 
+            display: flex; 
+            align-items: center; 
+            margin: 10px; 
+        }
+
+       
+       .panelitemthis
+       {
+            text-decoration: none; 
+            display: flex; 
+            align-items: center; 
+            margin: 10px; 
+            background-color: rgb(196, 0, 91);             
+            box-shadow: 1px 1px 3px black; 
+            border:solid 1px gray;
+            border-radius: 20px; 
+       } 
+       .menu
+       {
+           
+            align-items: center;
+            display: none;
+            margin-left: 20px;
+            
+       }
+       .menu2
+       {
+           margin-left: 220px;
+           margin-top: 0px;
+          
+       }
+    .footer
+    {
+        margin-left: 220px; 
+        margin-right: 20px; 
+        margin-top: 30px;
+    }
+    .container
+    {
+        display: flex; 
+        margin-left: 220px; 
+        flex-wrap: wrap-reverse;            
+    }  
+    .itemform
+    {
+        border: solid 2px black;  
+        border-radius: 10px;
+        flex-grow: 1; 
+        flex-shrink: 1; 
+        min-width: 250px; 
+        margin-right: 10px; 
+        margin-bottom: 15px;
+        width: 60%;
+        box-shadow: 1px 1px 3px;       
+    }
+    .itemform2
+    {
+        border: solid 2px black;  
+        border-radius: 10px;
+        flex-grow: 1; 
+        flex-shrink: 1; 
+        min-width: 400px; 
+        margin-right: 10px; 
+        margin-bottom: 15px;
+        width: 30%;
+        box-shadow: 1px 1px 3px;       
+    }
+        .divimage3
+        {
+            font-size: 20px; 
+            display: flex;  
+            justify-content: space-around;  
+            margin: auto;
+            width: 95%;                      
+            position: relative; 
+            top: -10px; 
+            height: 100px;
+            border-radius: 20px;
+            border: solid 1px grey;
+            box-shadow: 1px 1px 4px;
+            color: white;
+        }
+        .divimage1
+        {        
+            text-align: center;                 
+            position: relative; 
+            top: -40px;           
+        }
+        table
+        {
+            margin: auto;
+        }
+        td
+        {
+            width: 17%;
+            padding-bottom: 30px;
+        }
+        .namepage
+        {
+            margin-left: 220px;
+        }
+        .panelitemthis
+       {
+            text-decoration: none; 
+            display: flex; 
+            align-items: center; 
+            margin: 10px; 
+            background-color: rgb(196, 0, 91);             
+            box-shadow: 1px 1px 3px black; 
+            border:solid 1px gray;
+            border-radius: 20px; 
+       } 
+
+        .panel > .panelitem:hover
+       {
+            background-color: rgb(196, 0, 91);
+            color: white;
+            border-radius: 20px;         
+       }
+       .panel:hover
+       {
+        border: solid 1px gray;
+                 box-shadow: none;                
+                 height: 100%; 
+                 width: 200px;
+       }
+       .panel:hover > .menu
+       {
+           display: none;
+       }
+       .panel:hover > .panelitem
+       {
+           display: block;
+           display: flex; 
+            align-items: center; 
+       }
+       .panel:hover > .panelitemthis
+       {
+            display: block;
+            display: flex; 
+            align-items: center; 
+       }
+       .panel:hover >.h2
+       {
+           display: block;
+       }
+       @media (max-width: 500px)
+        {
+            .itemform
+            {
+                min-width: 250px;
+            }
+            .itemform2
+            {
+                min-width: 250px;
+            }
+        }
+       @media  screen and (max-width: 1000px)
+        {
+              .panel
+              {
+                 border: none;
+                 box-shadow: none;                
+                 height: auto;
+                 width: auto;
+              }
+              .panel>h2
+              {
+                  display: none;
+              } 
+              .panel>a
+              {
+                  display: none;
+              }
+              .panel>hr
+              {
+                  display: none;
+              }
+              .panel > div
+              {
+                  display: block;
+              }
+              .namepage
+              {
+                  display: none;
+              }
+              .container
+              {
+                  margin-top: 70px;
+                  margin-left: 20px;
+              }
+            
+             #footer
+             {
+                 margin-left: 20px;
+             }
+              
+        } 
+                
+</style>
+<body style="margin: 0px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+   
+    <h2 class="namepage">User profile</h2>
+<div class="container" style="align-items: flex-end;" >
+    <div class="itemform">      
+        <div class="divimage3" style="background-color: rgb(196, 0, 91); flex-direction: column;"> 
+            <div style="margin-left: 30px;">Edit Profile</div> 
+            <div style="margin-left: 30px;">Complete your profile</div>              
+            </div>
+        
+        <div style="padding-left: 10px; position: relative;">
+            <table style=" width: 95%; padding: 10px;">
+                <tr> 
+                    <td colspan="2">Company</td> 
+                     
+                    <td colspan="2">Username</td> 
+                   
+                    <td colspan="2">Email address</td> 
+                   
+                </tr>
+                
+                <tr> 
+                    <td colspan="2"><hr></td> 
+                    <td colspan="2"><hr></td> 
+                    <td colspan="2"><hr></td> 
+                </tr>
+                <tr> 
+                    <td colspan="3">First name</td> 
+                    <td colspan="3">Last name</td> 
+                </tr>
+                <tr> 
+                    <td colspan="3"><hr></td> 
+                    <td colspan="3"><hr></td> 
+                </tr>
+                <tr> 
+                    <td colspan="6">Address</td>                   
+                </tr> 
+                <tr> 
+                    <td colspan="6"><hr></td>                   
+                </tr>  
+                <tr> 
+                    <td colspan="2">City</td> 
+                     
+                    <td colspan="2">Counry</td> 
+                   
+                    <td colspan="2">Postal code</td> 
+                   
+                </tr>               
+                <tr> 
+                    <td colspan="2"><hr></td> 
+                    <td colspan="2"><hr></td> 
+                    <td colspan="2"><hr></td> 
+                </tr> 
+                <tr> 
+                    <td colspan="6">About me</td>                   
+                </tr> 
+                <tr> 
+                    <td colspan="6"><hr></td>                   
+                </tr> 
+                <tr> 
+                    <td colspan="4"></td> 
+                    <td colspan="2"><input type="button" value="UPDATE PROFILE" style="background-color: rgb(196, 0, 91); color: white; border-radius: 10px; padding: 20px; width: 100%;"></td> 
+                </tr>
+
+            </table>
+        
+        
+        </div>  
+    </div>
+    <div class="itemform2">      
+        <div class="divimage1" > 
+            <img src="/IMG/foto.png">             
+        </div>
+        
+       <div style="text-align: center; margin: 20px; margin-top: -30px; ">
+            <span> CEO / CO-FOUNDER</span>
+            <br>
+            <br>
+            <h1> Alec Thompson</h1>
+            <br>
+            <span style="font-size: 20px;">Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owen's bed design but the back is...</span>
+        </div>
+    </div>  
+</div>
+
+    <div id="footer" class="footer">
+        <hr>
+        <br>
+        <div  style="display: flex;  justify-content: space-between; align-items: stretch; font-size: 15px;">
+            <div style="align-self: flex-start;"> <span style="margin-left: 30px;">ABOUT</span> <span style="margin-left: 30px;">BLOG</span> <span style="margin-left: 30px;">LICENSES</span></div>
+            <div style="align-self: flex-end;"> <span style="margin-right: 30px;">2021 - made with love</span></div>
+        </div>
+        <br>
+    </div>
+
+    <div  class="panel">
+        <div  class="menu">
+            <img src="/IMG/menu.png" style="width: 30px; margin-right: 10px; margin-top: 20px;">
+        </div>
+        <h2 class="h2" style="margin: 20px;">Company</h2>
+        <hr>
+            <a href="index.html" class="panelitem"> 
+                <img src="/IMG/dashboard_gray.svg" style="margin: 10px; width: 30px;">Dashboard</a>
+                
+            <a href="#"  class="panelitemthis" style="color: white;">  
+                <img src="/IMG/account_gray.svg" style="margin: 10px; width: 30px;">User Profile</a>
+               
+            <a href="#"  class="panelitem">
+                <img src="/IMG/map_gray.svg" style="margin: 10px; width: 30px;">Maps</a>
+
+            <a href="#"  class="panelitem">
+                <img src="/IMG/notify_gray.svg" style="margin: 10px; width: 30px;">Notifications</a>
+
+            <a href="#"  class="panelitem">
+                <img src="/IMG/support_gray.svg" style="margin: 10px; width: 30px;">Support</a>                      
+    </div>
+</body>
+</html>
